@@ -1,0 +1,198 @@
+'''1. Write a program to accept percentage from the user and display the grade according to the following 
+criteria: 
+Marks 
+Grade 
+>90 
+A 
+>80 and <=90 
+B 
+>=60 and <=80 
+C 
+below 60 '''
+
+mark = float(input("Enter your percentage: "))
+
+if mark >= 90:
+    print("A")
+elif mark >= 80 and mark <= 90:
+    print("B")
+elif mark >= 60 and mark <= 80:
+    print("C")
+else:
+    print("Below 60")
+
+
+
+'''2. Write a program to accept the cost price of a bike and display the road tax to be paid according to the 
+following criteria: 
+Tax 
+15% 
+10% 
+5% 
+Cost Price(in Rs) 
+>100000 
+50000 and <= 100000 
+<= 50000 """
+'''
+cost_price = float(input("Enter the cost price of the bike in Rs: "))
+
+if cost_price > 100000:
+    tax = 0.15 * cost_price
+    print("The road tax to be paid is:", tax, "Rs")
+elif cost_price > 50000 and cost_price <= 100000:
+    tax = 0.10 * cost_price
+    print("The road tax to be paid is:", tax, "Rs")
+else:
+    tax = 0.05 * cost_price
+    print("The road tax to be paid is:", tax, "Rs")
+    
+'''
+Write a program to accept the cost price of a bike and display the road tax to be paid according to the 
+following criteria: 
+Tax 
+15% 
+10% 
+5% 
+Cost Price(in Rs) 
+>100000 
+50000 and <= 100000 
+<= 50000 
+'''
+
+cost_price = float(input("Enter the cost price of the bike in Rs: "))
+
+if cost_price > 100000:
+    tax = 0.15 * cost_price
+    print("The road tax to be paid is:", tax, "Rs")
+elif cost_price > 50000 and cost_price <= 100000:
+    tax = 0.10 * cost_price
+    print("The road tax to be paid is:", tax, "Rs")
+else:
+    tax = 0.05 * cost_price
+    print("The road tax to be paid is:", tax, "Rs")
+
+'''
+Accept any city from the user and display monuments of that city. 
+City 
+Delhi 
+Monument 
+Red Fort 
+Taj Mahal 
+Agra 
+Jaipur 
+Jal Mahal '''
+
+city = input("Enter the name of a city: ")
+
+if city == "Delhi":
+    print("Red Fort")
+elif city == "Agra":
+    print("Taj Mahal")
+elif city == "Jaipur":
+    print("Jal Mahal")
+else:
+    print("Monument information not available for the given city.")
+
+
+#Check how many times a given number can be divided by 3 before it is less than or equal to 10. 
+ 
+ num = int(input("Enter a number: "))
+
+counter = 0
+
+while num > 10:
+    num = num / 3
+    counter += 1
+
+print("The number can be divided", counter, "times by 3 before it is less than or equal to 10.")
+
+#Why and When to Use while Loop in Python give a detailed description with example
+
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
+
+```
+while loops are useful when you want to repeat a block of code an unknown number of times, or until a certain condition is met. For example, you might use a while loop to keep reading input from the user until they enter a valid value, or to repeat a calculation until it converges to a certain value.
+
+It's important to be careful when using while loops, as they can cause infinite loops if the condition never becomes false. To avoid this, make sure that the condition will eventually become false, and include a way to increment a counter or change the condition inside the loop so that it will eventually terminate.
+
+```
+
+
+# Use nested while loop to print 3 different pattern. 
+
+rows = 5
+
+for i in range(rows):
+    for j in range(i + 1):
+        print("*", end="")
+    print("")
+
+# Output:
+# *
+# **
+# ***
+# ****
+# *****
+
+rows = 5
+
+for i in range(rows, 0, -1):
+    for j in range(i):
+        print("*", end="")
+    print("")
+
+# Output:
+# *****
+# ****
+# ***
+# **
+# *
+
+rows = 5
+
+for i in range(rows):
+    for j in range(rows - i - 1):
+        print(end=" ")
+    for j in range(i + 1):
+        print("*", end=" ")
+    print("")
+
+# Output:
+#     * 
+#    * * 
+#   * * * 
+#  * * * * 
+# * * * * *
+
+Reverse a while loop to display numbers from 10 to 1
+
+number = 10
+
+while number >= 1:
+    print(number)
+    number -= 1
+
+# Output:
+# 10
+# 9
+# 8
+# 7
+# 6
+# 5
+# 4
+# 3
+# 2
+# 1
+
+
